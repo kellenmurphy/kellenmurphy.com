@@ -1,6 +1,9 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "Kellen Murphy" # the name of your site, e.g. ACME Corp.
+url: "https://kellenmurphy.com"
+baseurl: ""
+title: "Kellen Murphy"
+
+include:
+  - .well-known
 
 sass:
     load_paths:

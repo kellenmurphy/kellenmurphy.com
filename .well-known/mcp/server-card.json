@@ -1,0 +1,17 @@
+{
+  "schema_version": "1",
+  "serverInfo": {
+    "name": "kellenmurphy.com",
+    "version": "1.0.0",
+    "description": "Personal site of Kellen Murphy, Identity Architect and SSO Subject Matter Expert at the University of Virginia.",
+    "contact": "me@kellenmurphy.com",
+    "homepage": "https://kellenmurphy.com/"
+  },
+  "transport": null,
+  "capabilities": {},
+  "links": {
+    "about": "https://kellenmurphy.com/about.html",
+    "blog": "https://kellenmurphy.com/blog.html",
+    "sitemap": "https://kellenmurphy.com/sitemap.xml"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "api-catalog",
+      "type": "api-catalog",
+      "description": "RFC 9727 API catalog listing site resources.",
+      "url": "https://kellenmurphy.com/.well-known/api-catalog",
+      "sha256": "cd6f8859c62ad2ee4db8f1a6e60207b90fd545630b24a1d5e1770480b1f2b300"
+    },
+    {
+      "name": "mcp-server-card",
+      "type": "mcp-server-card",
+      "description": "MCP Server Card (SEP-1649) describing this site.",
+      "url": "https://kellenmurphy.com/.well-known/mcp/server-card.json",
+      "sha256": "3b6f8afa157d5bdec2d9bcf75ef59be319801ae3693593bcad130f451e6ab4e5"
+    }
+  ]
+}
