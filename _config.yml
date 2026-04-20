@@ -5,6 +5,10 @@ title: "Kellen Murphy"
 include:
   - .well-known
 
+collections:
+  md_pages:
+    output: true
+
 sass:
     load_paths:
         - _sass

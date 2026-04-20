@@ -9,4 +9,5 @@
   <!-- Agent discovery (RFC 8288 link relations) -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="api-catalog" href="/.well-known/api-catalog">
+  {% if page.markdown_url %}<link rel="alternate" type="text/markdown" href="{{ page.markdown_url }}">{% endif %}
 </head>

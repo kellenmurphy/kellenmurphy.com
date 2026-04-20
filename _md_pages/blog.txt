@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /blog.md
+---
+# Blog Archives
+
+{% for post in site.posts %}
+## [{{ post.title }}](https://kellenmurphy.com{{ post.url }})
+
+*{{ post.date | date: "%B %-d, %Y" }}*
+
+{{ post.excerpt | strip_html | strip }}
+
+---
+{% endfor %}
