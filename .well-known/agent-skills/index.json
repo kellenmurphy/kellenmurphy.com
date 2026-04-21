@@ -14,6 +14,20 @@
       "description": "MCP Server Card (SEP-1649) describing this site.",
       "url": "https://kellenmurphy.com/.well-known/mcp/server-card.json",
       "sha256": "3b6f8afa157d5bdec2d9bcf75ef59be319801ae3693593bcad130f451e6ab4e5"
+    },
+    {
+      "name": "oauth-protected-resource",
+      "type": "oauth-protected-resource",
+      "description": "RFC 9728 protected resource metadata. Declares no protected APIs or authentication requirements.",
+      "url": "https://kellenmurphy.com/.well-known/oauth-protected-resource",
+      "sha256": "11858104daf7f03b6c5a22a820674981f0e40f4b98d9e0aaa53c4de19f0d47f2"
+    },
+    {
+      "name": "openid-configuration",
+      "type": "openid-configuration",
+      "description": "OIDC discovery document. Declares no active authorization endpoints — this is a static site with no protected resources.",
+      "url": "https://kellenmurphy.com/.well-known/openid-configuration",
+      "sha256": "1f5e9c6bcfce79a400b01b7bbad1d9484e913efcc8c16d1037e7752f77c63c1b"
     }
   ]
 }
