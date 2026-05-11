@@ -1,0 +1,76 @@
+---
+layout: null
+permalink: /talks.md
+---
+# Talks & Presentations
+
+I present regularly at Internet2 conferences on identity and access management, Grouper, and enterprise IAM operations.
+
+## Internet2 Technology Exchange
+
+### Grouper Attestation in Action: UVA's Transition from MyGroups to Grouper
+**TechEx 2025** — December 10, 2025
+With Shira Acosta (University of Virginia)
+
+In Fall 2024, the University of Virginia transitioned from its custom group management solution, MyGroups, to Grouper. All existing MyGroups groups were migrated without modification, despite lacking compliance with new governance policies enabled by Grouper. Consequently, these legacy groups require thorough evaluation regarding their purpose, membership, and necessity. This talk explores how UVA is utilizing Grouper's Attestation functionality to systematically address these legacy groups, implement deprovisioning where needed, and ensure compliance with new group policies introduced with Grouper.
+
+---
+
+### Grouper Chronicles: Success with ABAC and Legacy Challenges
+**TechEx 2024**
+With Bruce Timberlake, Gail Lift, and Liam Hoekenga (University of Michigan)
+
+The University of Michigan and the University of Virginia share experiences with Grouper and its evolving capabilities. At Michigan, the team implemented Grouper's new Attribute-Based Access Control (ABAC) features in April 2024. At Virginia, the second year of transitioning from a legacy group management system to Grouper brought both challenges and practical lessons. Together: a comprehensive overview of Grouper ABAC adoption, when reference groups are the right call versus when ABAC is the better fit, and the realities of retiring legacy systems.
+
+---
+
+### IAM Archaeology
+**TechEx 2023**
+With Chris Bongaarts (University of Minnesota)
+
+Practical insights on retiring legacy systems, drawn from UMN's attempt to retire a 31-year-old identity system and UVA's journey replacing a home-built group management solution with Grouper.
+
+Slides: https://kellenmurphy.com/assets/talks/techex23-iam-archaeology.pdf
+
+---
+
+## Internet2 BaseCamp
+
+### XBAC: An Overview of Access Control
+**BaseCamp 2026** — June 2, 2026 *(upcoming)*
+
+A practical walk through the modern access control landscape. From RBAC and ABAC to newer policy and relationship-driven approaches, this session will unpack how they can fit together instead of competing. Come see how access control within the larger higher-ed IAM context can integrate governance, grouping, and federated authentication into a model that's both flexible and defensible.
+
+---
+
+### Core Concepts of Access & Grouping
+**BaseCamp 2025** — June 5, 2025
+
+An overview of access and grouping — learn about why grouping is critical for IAM and how access decisions are made. Plus see real-world examples of how institutions use groups and roles to improve security and efficiency. We'll also introduce the concepts of role-based access control (RBAC), attribute-based access control (ABAC), and group-based access management.
+
+Slides: https://kellenmurphy.com/assets/talks/basecamp26-access-and-grouping.pdf
+
+---
+
+### Data in Practice: Understanding the Role of Data in IAM
+**BaseCamp 2025** — June 5, 2025
+With Chris Bongaarts (University of Minnesota)
+
+IAM data — where does it come from, how is it used, and who is responsible for maintaining its accuracy? This session introduces the critical role of data in IAM, from sourcing identity information to managing entitlements and audit logs. Attendees will learn how IAM systems rely on campus data practices, why data consistency is key to access control, and what happens when bad data flows through IAM systems. Whether you're managing identity sources, troubleshooting inconsistencies, or improving data quality, this session provides the foundational knowledge you need.
+
+Slides: https://kellenmurphy.com/assets/talks/basecamp25-iam-data.pdf
+
+---
+
+## Internet2 IAMOnline
+
+### Change Afoot: Navigating the Hybrid IAM Landscape
+**IAMOnline 2025**
+With Tommy Doan (Southern Methodist University)
+
+Many institutions operate in a hybrid state, juggling on-premises identity systems with cloud-based IAM solutions. As the shift toward cloud infrastructure and SaaS services accelerates, institutions making these transitions must weigh greater scalability, flexibility, and integration options with challenges like licensing costs, integration complexity with legacy systems, and vendor dependence.
+
+SMU recently transitioned its primary identity provider from on-premises (Shibboleth) to the cloud (Entra ID) while maintaining a hybrid environment. UVA will discuss its approach to fully leveraging Entra ID while unifying two separate SSO solutions.
+
+Slides: https://kellenmurphy.com/assets/talks/iamonline25-change-afoot.pdf
+Recording: https://www.youtube.com/watch?v=hci1SsXqi54

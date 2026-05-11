@@ -4,18 +4,18 @@ title: "About Me"
 markdown_url: /about.md
 ---
 
-<h1>{{ page.title }}</h1>
-
 <div class="clearfix text-justify about-me">
 
-    <img class="col-md-4 float-md-start me-md-4" src="/assets/images/pandemic_office_mate.jpg"/>
+    <h1 class="mb-3">{{ page.title }}</h1>
+
+    <img class="float-md-start me-md-4" width="250" style="max-width:250px" src="/assets/images/pandemic_office_mate.jpg"/>
 
     <p>
-        This is me. This is what I look like on the day-to-day at work. Thanks to COVID, I'm solidly #WFH forever... That's (one of) my office-mate(s), Lucy. She's mad because I spent 30 minutes explaining to yet another client that <code>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</code> is <strong>NOT</strong> a literal format specification string that you needed to supply in your <code>&lt;SAMLResponse&gt;</code>, but rather a clarifying statement that you <strong>needn't specify</strong> a format rather than giving her treats!
+        That's my home office — and lurking in the background is Lucy. She's the reason I got into the habit of narrating my debugging sessions out loud. Turns out explaining a SAML assertion to a cat is surprisingly effective. She never once asked what a NameID format was, which honestly puts her ahead of a few SP developers I've worked with.
     </p>
 
     <p>
-        I am an Identity Architect with the <a href="https://identity.virginia.edu" target="_new">University of Virginia</a>. My specialization is single sign-on technologies, namely SAML and OpenID Connect, and I serve as the local subject matter expert for all things authentication and authorization related, including:
+        I am an Identity Architect with the <a href="https://identity.virginia.edu" target="_blank">University of Virginia</a>. My specialization is single sign-on technologies, namely SAML and OpenID Connect, and I serve as the local subject matter expert for all things authentication and authorization related, including:
         <ul class="float-pad">
             <li>leading enterprise identity infrastructure like Shibboleth and Grouper,</li>
             <li>helping the University manage the components of its SSO and IAM environment,</li>
@@ -28,61 +28,73 @@ markdown_url: /about.md
         If you have an IAM issue... I'm a good person to discuss that issue with!
     </p>
 
+    <h3 style="clear:left">My Weird Journey to IAM</h3>
+
     <p>
-        I peaked in cuteness at age 3... it's been downhill since then. I wanted to be an architect as a child, mostly because I liked <a href="https://lego.com">Lego</a> and the adults around me shrugged at that and said, "Hey, you could design buildings!" Unfortunately, architects need to know how to draw, so I turned to the other aspect of buildings... structural integrity. That led me for a long time to think I'd be an engineer of some sort, and I had a knack at math and science, so it fit.
+        I peaked in cuteness at age 3... it's been downhill since then. I wanted to be an architect as a child, mostly because I liked <a href="https://lego.com">Lego</a> and the adults around me shrugged at that and said, "Hey, you could design buildings!" Unfortunately, architects need to know how to draw, so I turned to the other aspect of buildings... structural integrity. That led me for a long time to think I'd be an engineer of some sort, and I had a knack at math and science, so it fit. As it turns out, the adults weren't entirely wrong... I did end up as an architect after all. The "identity" part wasn't in the original plan, but the instinct to figure out how things connect and fit together? That part stuck.
     </p>
 
     <img class="col-md-2 float-md-end ms-md-2" src="/assets/images/kellen_1987.jpg"/>
 
     <p>
-        At some point along my studies of science, however, I stopped caring about anything other than an unabashed search for knowledge. I wanted to master my understanding of the most fundamental nature of what, exactly, was this thing we called "matter." Unsurprisingly, therefore, I studied physics... first at <a href="https://otterbein.edu" target="_new">Otterbein College</a> (now Otterbein University), where I pivoted all of my studies toward high-energy nuclear physics, a.k.a. particle physics. I also picked up a degree in math because "might as well."
+        At some point along my studies of science, however, I stopped caring about anything other than an unabashed search for knowledge. I wanted to master my understanding of the most fundamental nature of what, exactly, was this thing we called "matter." Unsurprisingly, therefore, I studied physics... first at <a href="https://otterbein.edu" target="_blank">Otterbein College</a> (now Otterbein University), where I pivoted all of my studies toward high-energy nuclear physics, a.k.a. particle physics. I also picked up a degree in math because "might as well."
     </p>
 
     <p>
-        After completing my undergrad work, I chose to attend <a href="https://ohio.edu" target="_new">Ohio University</a> (note: <strong>not</strong> Ohio <em>State</em> University). OU didn't really offer high-energy physics in their nuclear theory group, so I instead worked on what could generously be called "intermediate"-energy physics. I worked with Dr. Daniel Phillips to complete an M.S. thesis on the topic of <a href="https://en.wikipedia.org/wiki/Effective_field_theory" target="_new">effective field theory</a>. Specifically, we computed the electromagnetic form factors of the light nuclei: <sup>2</sup>H and <sup>3</sup>He.
+        After completing my undergrad work, I chose to attend <a href="https://ohio.edu" target="_blank">Ohio University</a> (note: <strong>not</strong> Ohio <em>State</em> University). OU didn't really offer high-energy physics in their nuclear theory group, so I instead worked on what could generously be called "intermediate"-energy physics. I completed an M.S. thesis on the topic of <a href="https://en.wikipedia.org/wiki/Effective_field_theory" target="_blank">effective field theory</a>. Specifically, we computed the electromagnetic form factors of the light nuclei: <sup>2</sup>H and <sup>3</sup>He.
     </p>
 
     <p>
-        The math behind that work basically burned me out on quantum chromodynamics, field theory, and (very) advanced calculus; so I knew pretty quickly on in my graduate school career that nuclear physics as a path wasn't right for me. Instead of looking at the nature of matter at the smallest scales, I chose to look for answers instead at the largest, and begain studing observational cosmology under Dr. Doug Clowe. 
+        The math behind that work basically burned me out on quantum chromodynamics, field theory, and (very) advanced calculus; so I knew pretty early in my graduate school career that nuclear physics as a path wasn't right for me. Instead of looking at the nature of matter at the smallest scales, I chose to look for answers instead at the largest, and began studying observational cosmology under <a href="https://www.ohio.edu/cas/clowe" target="_blank">Dr. Doug Clowe</a>.
     </p>
     <p>
-        I began working on weak gravitational lensing, which culminated in my dissertation in December 2013 titled <a href="https://etd.ohiolink.edu/apexprod/rws_etd/send_file/send?accession=ohiou1384957353&disposition=inline" target="_new">Constraining Cosmology with Weak Gravitational Lensing</a>. I used cross correlation tomography of weak lensing signals to study to what extent dark matter in galaxy clusters bends the light from background galaxies at different redshifts. If we look at how this change in ellipticity varies with the lensed object's distance (effectively the same thing as redshift) we had hoped to build an effective constraint on the dark energy equation of state. The gist of my research was the weak lensing wasn't a very good tool for trying to constrain the cosmological parameters related to dark energy, but in science negative results are good too! Anything that furthers along our understanding of something is <strong>good science</strong>.
+        I began working on <a href="https://en.wikipedia.org/wiki/Gravitational_lens" target="_blank">weak gravitational lensing</a>, which culminated in my dissertation in December 2013 titled <a href="https://etd.ohiolink.edu/apexprod/rws_etd/send_file/send?accession=ohiou1384957353&disposition=inline" target="_blank">Constraining Cosmology with Weak Gravitational Lensing</a>. I used cross correlation tomography of weak lensing signals to study to what extent dark matter in galaxy clusters bends the light from background galaxies at different redshifts. If we look at how this change in ellipticity varies with the lensed object's distance (effectively the same thing as redshift) we had hoped to build an effective constraint on the dark energy equation of state. The gist of my research was that weak lensing wasn't a very good tool for trying to constrain the cosmological parameters related to dark energy, but in science negative results are good too! Anything that furthers along our understanding of something is <strong>good science</strong>.
     </p>
 
     <img class="col-md-2 float-md-start me-md-2" src="/assets/images/holly_and_i.jpg"/>
 
     <p>
-        While I was in grad school, I met the love of my life, Holly. We married in 2009, and had our twin daughters Hope and Lily in 2012. Right about the same time I was thinking about defending a disseration and move on to the next phase of my academic life. That said, the only post-doc opportunities I was seriously considering were in Europe, which is a long way from Athens, OH. Since we really needed help from our local families raising our kids, I decided that an academic career wasn't going to be for me, and that instead I should look for "real" work.
+        While I was in grad school, I met the love of my life, Holly. We married in 2009, and had our twin daughters Hope and Lily in 2012. Right about the same time I was thinking about defending a dissertation and moving on to the next phase of my academic life. That said, the only post-doc opportunities I was seriously considering were in Europe, which is a long way from Athens, OH. Since we really needed help from our local families raising our kids, I decided that an academic career wasn't going to be for me, and that instead I should look for "real" work.
     </p>
 
     <p>
-        I was looking at jobs locally as a developer, and given that there weren't many options for that kind of work in Athens, I started a business from which to consolidate my freelancing work, along with picking up some other small-business IT projects locally. In 2016, BCS Engineering acquired my business, mainly to acquire me. I had gotten to know Brandon and Carrie well through our church, where both Brandon and I were active volunteers with the technical teams, Brandon running sound and I focusing on the video systems. I began working for Brandon and Carrie, leading their local small-business IT consulting efforts, and moonlighting on some programming projects for the e-commerce side of the business. I wasn't a PHP developer, but I rather quickly became one, and gained substantial experience in the e-commerce market working on the <a href="https://xcart.com" target="_new">X-cart</a> and <a href="https://business.adobe.com/products/magento/magento-commerce.html" target="_new">Magento / Adobe Commerce</a> platforms.
+        I was looking at jobs locally as a developer, and given that there weren't many options for that kind of work in Athens, I started a business from which to consolidate my freelancing work, along with picking up some other small-business IT projects locally. In 2016, BCS Engineering acquired my business, mainly to acquire me. I had gotten to know the owners well through our church, where I volunteered with the technical teams focusing on video production. I began working for them, leading their local small-business IT consulting efforts, and moonlighting on some programming projects for the e-commerce side of the business. I wasn't a PHP developer, but I rather quickly became one, and gained substantial experience in the e-commerce market working on the <a href="https://xcart.com" target="_blank">X-cart</a> and <a href="https://business.adobe.com/products/magento/magento-commerce.html" target="_blank">Magento / Adobe Commerce</a> platforms.
     </p>
 
     <img class="col-md-4 float-md-end ms-md-4" src="/assets/images/hope_and_lily.jpg"/>
 
     <p>
-        BCSE also owned a sister-company, IDM Integration, along with another business partner. From my first IDM project upgrading Shibboleth IDP in 2016 on it was clear that I had a knack for identity engineering. I threw myself into IAM projects as often as I could, and by 2018 I was playing a privotal role with IDMI, taking on a "senior" engineering role and being involved in much of the day-to-day operations of the business. We also rather quickly realized that I was more valuable consulting on identity and e-commerce projects, and closed up the small-business IT consulting largely by the middle of 2017 (except for existing customers, whom we slowly phased out over the next two years).
+        BCSE also owned a sister-company, IDM Integration, along with another business partner. From my first IDMI project upgrading <a href="https://shibboleth.net" target="_blank">Shibboleth</a> IDP in 2016, it was clear that I had a knack for identity and access management, specifically authentication. I threw myself into IAM projects as often as I could, and by 2018 I was playing a pivotal role with IDMI, taking on a "senior" engineering role and being involved in much of the day-to-day operations of the business.
     </p>
 
     <p>
-        In 2019, the third IDMI business partner chose to leave the business, and as a result of the separation agreement we continued on as IDM Engineering. I took on a more formalized role in running the business at that time, and since then I have served as a main IDM Engineering engineer. Under my direction, IDME has broadened its consulting specialization away from just Shibboleth-based SSO to <strong>anything</strong> IAM-related. We've embraced moving our customers forward in the new, cloud-dominated space, assisting with many migrations away from on-premises implementations of SAML like Shibboleth and ADFS, toward IDaaS offering from Azure, Ping, and Okta.
+        We also rather quickly realized that I was more valuable consulting on identity and e-commerce projects, and closed up the small-business IT consulting largely by the middle of 2017 (except for existing customers, whom we slowly phased out over the next two years).
     </p>
 
     <p>
-        That consulting work confirmed what I'd long suspected: identity and access management was exactly where I belonged. In late 2022, I had the opportunity to bring that expertise in-house at scale, joining the <a href="https://identity.virginia.edu" target="_new">University of Virginia</a> as an Identity Architect on their Identity Services team.
+        In 2019, the third IDMI business partner chose to leave the business, and as a result of the separation agreement we continued on as IDM Engineering. I took on a more formalized role running the business, and under my direction IDME broadened its consulting specialization away from just Shibboleth-based SSO to <strong>anything</strong> IAM-related. We moved customers forward in the cloud-dominated space, assisting with migrations away from on-premises SAML implementations like Shibboleth and ADFS toward IDaaS offerings from Entra, Ping, and Okta.
     </p>
 
     <p>
-        The work at UVA has been some of the most rewarding of my career. I led the rollout of <a href="https://www.internet2.edu/products-services/trust-identity/grouper/" target="_new">Internet2 Grouper</a>, an enterprise group and access management platform now central to how the University manages authorization across the institution. I've taken on significant operational responsibility for UVA's <a href="https://netbadge.virginia.edu" target="_new">Shibboleth (NetBadge)</a> identity provider infrastructure, and I served as the senior engineer on the University's Privileged Access Management (PAM) deployment. Beyond those headline projects, I serve happily as a local subject matter expert for all things authentication and authorization: whether that means troubleshooting a gnarly SAML assertion, advising on an OIDC integration, or helping shape the direction of identity strategy at a university-wide scale. No two days are quite the same and I wouldn't have it any other way!
+        That consulting work confirmed what I'd long suspected: identity and access management was exactly where I belonged. In late 2022, I had the opportunity to bring that expertise in-house at scale, joining the <a href="https://identity.virginia.edu" target="_blank">University of Virginia</a> as an Identity Architect on their Identity Services team.
+    </p>
+
+    <h3>Today</h3>
+
+    <p>
+        The work at UVA has been some of the most rewarding of my career. I led the rollout of <a href="https://www.internet2.edu/products-services/trust-identity/grouper/" target="_blank">Internet2 Grouper</a>, an enterprise group and access management platform now central to how the University manages authorization across the institution. I've taken on significant operational responsibility for UVA's <a href="https://netbadge.virginia.edu" target="_blank">Shibboleth (NetBadge)</a> identity provider infrastructure, and I served as the senior engineer on the University's Privileged Access Management (PAM) deployment. Beyond those headline projects, I serve happily as a local subject matter expert for all things authentication and authorization: whether that means troubleshooting a gnarly SAML assertion, advising on an OIDC integration, or helping shape the direction of identity strategy at a university-wide scale. No two days are quite the same and I wouldn't have it any other way!
     </p>
 
     <p>
-        That's my story so far... I'm curious to see where I go from here. Feel free to peek at my <a href="https://linkedin.com/in/kellenmurphy">LinkedIn</a> or <a href="https://github.com/kellenmurphy">GitHub</a> profiles, or <a href="mailto:me@kellenmurphy.com">reach out to me directly</a> if you have questions!
+        Beyond my day-to-day work, I stay active in the broader identity community. I serve on the <a href="https://incommon.org" target="_blank">InCommon Federation</a>'s <a href="https://incommon.org/community/about-leadership-advisory/committees/technical-advisory" target="_blank">Technical Advisory Committee</a>, and I'm an active participant in multiple <a href="https://internet2.edu" target="_blank">Internet2</a> working groups. I'm also a <a href="https://www.credly.com/badges/b6157100-2e86-4bc2-9f02-8e1058d45ef3" target="_blank">Certified IDPro</a>.
     </p>
 
     <p>
-        Cheers! <br /> &nbsp;&nbsp;&nbsp;&nbsp;-- Kellen
+        That's the story so far. The IAM space keeps evolving fast enough that there's always something new to dig into — which is exactly how I like it. Feel free to peek at my <a href="https://linkedin.com/in/kellenmurphy">LinkedIn</a> or <a href="https://github.com/kellenmurphy">GitHub</a>, or <a href="mailto:me@kellenmurphy.com">reach out directly</a> if you want to talk shop.
+    </p>
+
+    <p>
+        Cheers! <br /> &nbsp;&nbsp;&nbsp;&nbsp;&mdash; Kellen
     </p>
 
 </div>

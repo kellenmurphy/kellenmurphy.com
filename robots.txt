@@ -3,7 +3,9 @@
 
 User-agent: *
 Allow: /
-Disallow: /assets/
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/images/
 
 # AI training crawlers — disallow training on personal site content
 User-agent: GPTBot
