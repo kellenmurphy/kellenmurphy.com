@@ -1,6 +1,8 @@
 url: "https://kellenmurphy.com"
 baseurl: ""
 title: "Kellen Murphy"
+tagline: "Identity Architect & SSO Subject Matter Expert"
+description: "Identity Architect &amp; SSO Subject Matter Expert at the University of Virginia."
 
 include:
   - .well-known

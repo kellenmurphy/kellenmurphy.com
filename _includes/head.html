@@ -3,8 +3,18 @@
   <meta charset="utf-8">
   <meta http-equiv='Content-Security-Policy'
     content="default-src 'self' *.kellenmurphy.com; style-src 'self' data:; script-src 'self'; img-src * 'self' data:">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title == 'Home' %}{{ site.title }} &mdash; {{ site.tagline }}{% else %}{{ page.title }} &mdash; {{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/headshot-2024.png">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
   <title>{{ site.title }} - {{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script src="/assets/js/theme.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
   <!-- Agent discovery (RFC 8288 link relations) -->
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">

@@ -1,8 +1,17 @@
 $backgroundColor: #fff;
 $bodyColor: #000;
-$linkColor: #999;
-$hoverColor: #6c5aa5;
+$linkColor: #232D4B;
+$navLinkColor: #666;
+$hoverColor: #E57200;
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+$dark-bg: #161b22;
+$dark-surface: #0d1117;
+$dark-body: #c9d1d9;
+$dark-link: #7B9ED9;
+$dark-nav-link: #8b949e;
+$dark-hover: #E57200;
+$dark-border: #30363d;
 
 body {
   background: $backgroundColor;
@@ -31,11 +40,15 @@ body {
 
   a, a:visited {
     color: $linkColor;
-    text-decoration: none;
+    text-decoration: underline;
   }
   a:hover {
     color: $hoverColor;
-    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  code {
+    color: $hoverColor;
   }
 
   .frontpage-circ {
@@ -64,10 +77,47 @@ body {
 
   }
 
+  .theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 6px;
+    color: #666;
+    line-height: 0;
+    transition: background-color 0.15s, color 0.15s;
+
+    &:hover {
+      background-color: #eee;
+      color: $hoverColor;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: none !important;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .sun-icon { display: none; }
+    .moon-icon { display: block; }
+  }
+
   .navbar {
 
     svg {
+      fill: $navLinkColor !important;
+    }
+
+    a:hover svg {
       fill: $hoverColor !important;
+    }
+
+    .theme-toggle-btn svg {
+      fill: none !important;
     }
 
     .toggle {
@@ -98,9 +148,19 @@ body {
       text-align: center;
     }
 
-   .nav-link:hover {
+    .nav-link,
+    .navbar-brand,
+    .navbar-brand-two {
+      color: $navLinkColor !important;
+      text-decoration: none !important;
+    }
+
+    .nav-link:hover,
+    .navbar-brand:hover,
+    .navbar-brand-two:hover {
       color: $hoverColor !important;
-   }
+      text-decoration: none !important;
+    }
 
   }
 
@@ -118,14 +178,279 @@ body {
       padding-right: 1em;
   }
 
+  .about-me {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
   .about-me img {
     max-width: 100%;
   }
 
   .warning {
-    text-align: center; 
+    text-align: center;
     max-width:500px;
     color: red;
   }
 
+  .talks {
+    max-width: 860px;
+    margin: 0 auto;
+
+    .talks-intro {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .talks-conference {
+      font-size: 1rem;
+      font-weight: 700;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+
+      a, a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+    .talk {
+      margin-bottom: 1.75rem;
+    }
+
+    .talk-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .talk-title {
+      font-weight: 700;
+    }
+
+    .talk-meta {
+      font-size: 0.85rem;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    .talk-upcoming {
+      color: $hoverColor;
+      font-style: italic;
+    }
+
+    .talk-copresenters {
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-bottom: 0.35rem;
+    }
+
+    .talk-abstract {
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .talk-slides-link {
+      font-size: 0.85rem;
+    }
+  }
+
+  .resume {
+    max-width: 860px;
+    margin: 0 auto;
+
+    .resume-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+
+    .resume-contact {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    .resume-pdf-btn {
+      font-size: 0.8rem;
+      border: 1px solid $navLinkColor;
+      color: $navLinkColor;
+      white-space: nowrap;
+      text-decoration: none !important;
+
+      &:hover {
+        border-color: $hoverColor;
+        color: $hoverColor;
+      }
+    }
+
+    .resume-section {
+      font-size: 1rem;
+      font-weight: 700;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0;
+    }
+
+    .resume-jobtitle {
+      font-weight: 700;
+    }
+
+    .resume-date {
+      font-weight: 700;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+
+    .resume-org {
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    ul {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul li {
+      position: static;
+      left: auto;
+      padding-right: 0;
+    }
+
+    .resume-skills {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    .resume-footer {
+      font-size: 0.85rem;
+      color: #888;
+    }
+  }
+
+}
+
+html.dark {
+  body {
+    background: $dark-bg;
+    color: $dark-body;
+
+    a, a:visited {
+      color: $dark-link;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: $dark-hover;
+      text-decoration: underline;
+    }
+
+    code {
+      color: $dark-hover;
+    }
+
+    .theme-toggle-btn {
+      color: $dark-link;
+
+      .sun-icon { display: block; }
+      .moon-icon { display: none; }
+
+      &:hover {
+        background-color: #21262d;
+        color: $dark-body;
+      }
+    }
+
+    .navbar {
+      background-color: $dark-surface !important;
+      border-bottom: 1px solid $dark-border;
+
+      .navbar-brand,
+      .navbar-brand-two {
+        color: $dark-body;
+      }
+
+      subtitle {
+        color: #888 !important;
+      }
+
+      .nav-link {
+        color: $dark-nav-link !important;
+        &:hover {
+          color: $dark-hover !important;
+        }
+      }
+
+      .navbar-toggler {
+        border-color: $dark-border;
+      }
+
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+
+      svg {
+        fill: $dark-nav-link !important;
+      }
+
+      a:hover svg {
+        fill: $dark-hover !important;
+      }
+
+      .theme-toggle-btn svg {
+        fill: none !important;
+      }
+    }
+
+    footer {
+      border-color: $dark-border !important;
+
+      .license {
+        color: $dark-link;
+
+        a, a:visited {
+          color: $dark-link;
+        }
+      }
+
+      svg {
+        fill: $dark-link !important;
+      }
+      a:hover svg {
+        fill: $dark-hover !important;
+      }
+    }
+
+    .resume {
+      .resume-pdf-btn {
+        border-color: $dark-nav-link;
+        color: $dark-nav-link;
+
+        &:hover {
+          border-color: $dark-hover;
+          color: $dark-hover;
+        }
+      }
+    }
+  }
 }
