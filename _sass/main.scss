@@ -178,6 +178,23 @@ body {
       padding-right: 1em;
   }
 
+  .gh-activity {
+    max-width: 760px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+    text-align: center;
+
+    .gh-activity-total {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .gh-activity-wrap {
+      overflow-x: auto;
+    }
+  }
+
   .about-me {
     max-width: 860px;
     margin: 0 auto;
@@ -450,6 +467,12 @@ html.dark {
           border-color: $dark-hover;
           color: $dark-hover;
         }
+      }
+    }
+
+    .gh-activity {
+      .gh-activity-total {
+        color: $dark-nav-link;
       }
     }
   }
