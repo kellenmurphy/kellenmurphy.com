@@ -1,13 +1,17 @@
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   {% include navbar.html %}
 
-  <div class="container">
+  <main class="container" id="main-content">
 
     <div class="row px-2 py-4">
       {{ content }}
     </div>
 
-  </div>
+  </main>
+
+  <footer class="site-footer">&copy; {{ 'now' | date: '%Y' }} Kellen Murphy</footer>
 
 </body>
