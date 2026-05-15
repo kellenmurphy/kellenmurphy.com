@@ -3,6 +3,7 @@ layout: default
 title: "Talks"
 description: "Conference presentations by Kellen Murphy on identity and access management, Grouper, and enterprise IAM."
 markdown_url: /talks.md
+last_modified_at: 2026-05-15
 ---
 
 <div class="talks">
@@ -11,6 +12,22 @@ markdown_url: /talks.md
 
   <section>
     <h2 class="talks-conference"><a href="https://incommon.org/academy/camps-conferences/camp-week" target="_blank">Internet2 Technology Exchange</a></h2>
+
+    <div class="talk">
+      <div class="talk-header">
+        <span class="talk-title">Shibboleth Reborn: NetBadge Under New Stewardship at the University of Virginia</span>
+        <span class="talk-meta"><span class="talk-upcoming">Accepted</span> &middot; TechEx 2026</span>
+      </div>
+      <p class="talk-abstract">
+        When the University of Virginia's Identity Services team assumed operational responsibility for UVA's long-running Shibboleth deployment in 2025, it inherited a stable but stationary service: SAML integrations were well tracked, reliably delivered, and semi-automated, but the service was also ripe for modernization. This session chronicles the first year of that transition: what we found, what we changed, and where we're headed.
+      </p>
+      <p class="talk-abstract">
+        We'll share practical lessons from efforts to tighten SAML attribute hygiene, reduce reliance on email-based identifiers for our Health System, and our custom tooling that makes SAML integrations easier than ever. We'll look ahead at how containerized deployment via Docker Swarm and the InCommon Trusted Access Platform container images will reshape our release pipeline. And lastly, we'll discuss how we're aiming to improve customer service by simplifying bulk integrations for technically adept users via Keycloak proxying.
+      </p>
+      <p class="talk-abstract">
+        Finally, we'll share how we're beginning to face the question every multitenant institution dreads: how do you converge Shibboleth and Microsoft Entra ID into a unified SSO experience when half of your users are in one (Academic) tenant and the other half are in a separate (Health System) tenant?
+      </p>
+    </div>
 
     <div class="talk">
       <div class="talk-header">

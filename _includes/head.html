@@ -4,14 +4,29 @@
   <meta http-equiv='Content-Security-Policy'
     content="default-src 'self' *.kellenmurphy.com; style-src 'self' data:; script-src 'self'; img-src * 'self' data:">
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="{{ site.title }}">
+  <meta name="fediverse:creator" content="@kellenmurphy@infosec.exchange">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: 'index.html' }}">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <link rel="author" href="{{ site.url }}/about">
+  <link rel="me" href="https://infosec.exchange/@kellenmurphy">
+  <link rel="me" href="https://linkedin.com/in/kellenmurphy">
+  <link rel="me" href="https://github.com/kellenmurphy">
   <!-- Open Graph -->
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{% if page.title == 'Home' %}{{ site.title }} &mdash; {{ site.tagline }}{% else %}{{ page.title }} &mdash; {{ site.title }}{% endif %}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:image" content="{{ site.url }}/assets/images/headshot-2024.png">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: 'index.html' }}">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title == 'Home' %}{{ site.title }} &mdash; {{ site.tagline }}{% else %}{{ page.title }} &mdash; {{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/headshot-2024.png">
   <title>{{ site.title }} - {{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script src="/assets/js/theme.js"></script>
@@ -20,4 +35,36 @@
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="api-catalog" href="/.well-known/api-catalog">
   {% if page.markdown_url %}<link rel="alternate" type="text/markdown" href="{{ page.markdown_url }}">{% endif %}
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kellen Murphy",
+    "url": "{{ site.url }}",
+    "jobTitle": "Identity Architect",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of Virginia",
+      "url": "https://identity.virginia.edu"
+    },
+    "knowsAbout": [
+      "Identity and Access Management",
+      "SAML",
+      "OpenID Connect",
+      "Shibboleth",
+      "Single Sign-On",
+      "Grouper",
+      "Privileged Access Management"
+    ],
+    "sameAs": [
+      "https://infosec.exchange/@kellenmurphy",
+      "https://linkedin.com/in/kellenmurphy",
+      "https://github.com/kellenmurphy"
+    ],
+    "image": "{{ site.url }}/assets/images/headshot-2024.png",
+    "email": "me@kellenmurphy.com",
+    "description": "Identity Architect & SSO Subject Matter Expert at the University of Virginia."
+  }
+  </script>
 </head>

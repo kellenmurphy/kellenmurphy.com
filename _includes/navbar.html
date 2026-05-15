@@ -7,15 +7,11 @@
       <a class="navbar-brand d-none d-lg-inline-block" href="/">
         <img class="headshot" src="/assets/images/headshot-2024.png" alt="This is me, Kellen Murphy!" />
         Kellen Murphy
-        <subtitle>IAM Architect & SSO SME</subtitle>
+        <span class="navbar-subtitle">IAM Architect & SSO SME</span>
       </a>
 
-      <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="/">
-        <img class="headshot" src="/assets/images/headshot-2024.png" alt="This is me, Kellen Murphy!">
-      </a>
-
-      <div class="w-100 toggle">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+<div class="w-100 toggle">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -35,6 +31,9 @@
           <a href="/blog" class="nav-link m-2 menu-item">archives</a>
         </li>
         {% endcomment %}
+        <li class="nav-item d-lg-none">
+          <a href="/" class="nav-link m-2 menu-item">home</a>
+        </li>
         <li class="nav-item">
           <a href="/about" class="nav-link m-2 menu-item nav-active">about</a>
         </li>
@@ -47,23 +46,17 @@
         <li class="nav-item">
           <a href="https://samlguy.com" target="_blank" class="nav-link m-2 menu-item nav-active">tools</a>
         </li>
-        <li class="nav-item">
-          <a href="https://linkedin.com/in/kellenmurphy" target="_blank" class="nav-link m-2 menu-item nav-active" aria-label="LinkedIn">
+        <li class="nav-item d-flex align-items-center">
+          <a href="https://linkedin.com/in/kellenmurphy" target="_blank" rel="me noopener" class="nav-link m-2 menu-item nav-active" aria-label="LinkedIn">
             <svg width="18" height="18"><use xlink:href="/assets/images/bootstrap-icons.svg#linkedin"></use></svg>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/kellenmurphy" target="_blank" class="nav-link m-2 menu-item nav-active" aria-label="GitHub">
+          <a href="https://github.com/kellenmurphy" target="_blank" rel="me noopener" class="nav-link m-2 menu-item nav-active" aria-label="GitHub">
             <svg width="18" height="18"><use xlink:href="/assets/images/bootstrap-icons.svg#github"></use></svg>
           </a>
-        </li>
-        <li class="nav-item">
           <a href="mailto:me@kellenmurphy.com" class="nav-link m-2 menu-item nav-active" aria-label="Email">
             <svg width="18" height="18"><use xlink:href="/assets/images/bootstrap-icons.svg#envelope"></use></svg>
           </a>
-        </li>
-        <li class="nav-item d-flex align-items-center ms-1">
-          <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">
+          <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn ms-1">
             <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
               <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
