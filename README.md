@@ -1,4 +1,4 @@
-# [kellenmurphy.github.io](https://kellenmurphy.com)
+# [kellenmurphy.com](https://kellenmurphy.com)
 
 Source for [kellenmurphy.com](https://kellenmurphy.com) — a Jekyll static site deployed via GitHub Actions to GitHub Pages.
 
