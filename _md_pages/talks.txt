@@ -37,9 +37,11 @@ Slides: https://kellenmurphy.com/assets/talks/techex23-iam-archaeology.pdf
 ## Internet2 BaseCamp
 
 ### XBAC: An Overview of Access Control
-**BaseCamp 2026** — June 2, 2026 *(upcoming)*
+**BaseCamp 2026** — June 2, 2026
 
 A practical walk through the modern access control landscape. From RBAC and ABAC to newer policy and relationship-driven approaches, this session will unpack how they can fit together instead of competing. Come see how access control within the larger higher-ed IAM context can integrate governance, grouping, and federated authentication into a model that's both flexible and defensible.
+
+Slides: https://kellenmurphy.com/assets/talks/basecamp26-xbac.pdf
 
 ---
 
@@ -48,7 +50,7 @@ A practical walk through the modern access control landscape. From RBAC and ABAC
 
 An overview of access and grouping — learn about why grouping is critical for IAM and how access decisions are made. Plus see real-world examples of how institutions use groups and roles to improve security and efficiency. We'll also introduce the concepts of role-based access control (RBAC), attribute-based access control (ABAC), and group-based access management.
 
-Slides: https://kellenmurphy.com/assets/talks/basecamp26-access-and-grouping.pdf
+Slides: https://kellenmurphy.com/assets/talks/basecamp25-access-and-grouping.pdf
 
 ---
 
