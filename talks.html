@@ -3,7 +3,7 @@ layout: default
 title: "Talks"
 description: "Conference presentations by Kellen Murphy on identity and access management, Grouper, and enterprise IAM."
 markdown_url: /talks.md
-last_modified_at: 2026-06-02
+last_modified_at: 2026-11-06
 ---
 
 <div class="talks">
@@ -11,12 +11,33 @@ last_modified_at: 2026-06-02
   <h1 class="mb-3">{{ page.title }}</h1>
 
   <section>
+    <h2 class="talks-conference"><a href="https://events.internet2.edu/website/96909/" target="_blank">Internet2 Global Summit</a></h2>
+
+    <div class="talk">
+      <div class="talk-header">
+        <span class="talk-title">Who Is Asking? Agentic AI and Federation</span>
+        <span class="talk-meta"><span class="talk-upcoming">Accepted</span> &middot; Global Summit 2027 &middot; April 6, 2027</span>
+      </div>
+      <p class="talk-abstract">
+        Higher education solved cross-institutional access once. A researcher at one university logs into a resource at another because a federation vouches for the identity provider, the identity provider vouches for the person, and the resource trusts the chain. Twenty years on, that chain assumes the party asking is a person with a browser. Agents break the assumption at every link, and they are arriving on campus the way cloud did: one department, one vendor key, one personal account at a time, ahead of any plan.
+      </p>
+      <p class="talk-abstract">
+        This talk puts the agent problem at the federation level. Four questions the current model cannot answer: which of a person's roles an agent is acting in; how a person delegates to an agent in a way another institution can verify; how a collaborator's agent reaches a resource here without a bilateral arrangement for every person, agent and dataset; and how any of it is audited across a boundary, when it is thin inside one.
+      </p>
+      <p class="talk-abstract">
+        These are one problem. An agent acting for a person, a proxy fronting a hundred services, and a school handing its directory to a hosted intermediary all come down to the same question: who stands behind this assertion, and who agreed to how it may be used. The federation was built to answer that for people. The talk makes the case that it can answer it for agents too, and that the pieces are closer to hand than the standards conversation suggests.
+      </p>
+    </div>
+
+  </section>
+
+  <section>
     <h2 class="talks-conference"><a href="https://incommon.org/academy/camps-conferences/camp-week" target="_blank">Internet2 Technology Exchange</a></h2>
 
     <div class="talk">
       <div class="talk-header">
-        <span class="talk-title">Shibboleth Reborn: NetBadge Under New Stewardship at the University of Virginia</span>
-        <span class="talk-meta"><span class="talk-upcoming">Accepted</span> &middot; TechEx 2026</span>
+        <span class="talk-title">NetBadge Reborn: Shibboleth Under New Stewardship at UVA</span>
+        <span class="talk-meta">TechEx 2026 &middot; October 27, 2026</span>
       </div>
       <p class="talk-abstract">
         When the University of Virginia's Identity Services team assumed operational responsibility for UVA's long-running Shibboleth deployment in 2025, it inherited a stable but stationary service: SAML integrations were well tracked, reliably delivered, and semi-automated, but the service was also ripe for modernization. This session chronicles the first year of that transition: what we found, what we changed, and where we're headed.
@@ -27,6 +48,9 @@ last_modified_at: 2026-06-02
       <p class="talk-abstract">
         Finally, we'll share how we're beginning to face the question every multitenant institution dreads: how do you converge Shibboleth and Microsoft Entra ID into a unified SSO experience when half of your users are in one (Academic) tenant and the other half are in a separate (Health System) tenant?
       </p>
+      <a href="/assets/talks/techex26-netbadge-reborn.pdf" class="talk-slides-link" target="_blank">Slides (PDF)</a>
+      &nbsp;&middot;&nbsp;
+      <a href="/assets/talks/techex26-netbadge-reborn-demo.mp4" class="talk-slides-link" target="_blank">Identity Tools Demo (MP4)</a>
     </div>
 
     <div class="talk">
